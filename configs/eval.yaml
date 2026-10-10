@@ -1,0 +1,15 @@
+# Evaluation on SyncReward-Bench (paper settings).
+encoder_path: facebook/pe-av-large
+target_key: target
+pred_key: reward
+num_segments: 18
+segment_duration: 0.5
+segment_stride: 0.25
+crop: center
+batch_size: 8
+encode_batch_size: 18
+num_workers: 4
+top1_n: 4
+top1_draws: 1000
+bootstrap: 1000
+seed: 20260820

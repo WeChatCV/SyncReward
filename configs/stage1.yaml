@@ -1,0 +1,15 @@
+# Stage 1: semantic-temporal mixed contrastive learning (paper recipe, per GPU).
+encoder_path: facebook/pe-av-large
+num_segments: 18
+segment_duration: 0.5
+batch_size: 2
+encode_batch_size: 6
+num_epochs: 10
+learning_rate: 1.0e-5
+warmup_steps: 1000
+max_grad_norm: 1.0
+init_temperature: 0.07
+learnable_temperature: true
+num_workers: 8
+save_every_steps: 500
+log_every_steps: 10

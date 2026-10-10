@@ -1,0 +1,26 @@
+# Stage 2: human alignment (paper recipe, per GPU; 2 nodes x 8 GPUs in the paper).
+encoder_path: facebook/pe-av-large
+target_key: target
+num_segments: 18
+segment_duration: 0.5
+segment_stride: 0.25
+train_crop: random
+sync_dim: 768
+num_layers: 3
+num_heads: 8
+dropout: 0.1
+batch_size: 8
+encode_batch_size: 18
+num_epochs: 3
+learning_rate: 1.0e-5
+weight_decay: 0.01
+warmup_steps: 100
+max_grad_norm: 1.0
+ranking_weight: 0.1
+ranking_margin: 0.25
+ranking_min_gap: 0.75
+smooth_l1_beta: 0.1
+num_workers: 4
+save_every_steps: 200
+log_every_steps: 1
+seed: 20260721

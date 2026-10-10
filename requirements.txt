@@ -1,0 +1,11 @@
+# Versions used for the released results (Python 3.12.9, CUDA 12.4, cuDNN 9.1, FFmpeg 4.4.2, NVIDIA H20).
+torch==2.6.0
+torchaudio==2.6.0
+torchcodec==0.2.1
+transformers==5.1.0
+timm==1.0.26
+safetensors==0.8.0
+huggingface_hub==1.33.0
+numpy==1.26.4
+PyYAML==6.0.2
+tqdm==4.66.6
