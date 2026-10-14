@@ -11,7 +11,7 @@ Renmin University of China · WeChat, Tencent
 [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-orange)](https://huggingface.co/Guan123/SyncReward)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/Guan123/SyncReward-Data)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
-![Paper coming soon](https://img.shields.io/badge/Paper-Coming%20soon-lightgrey)
+[![arXiv](https://img.shields.io/badge/arXiv-2610.16338-b31b1b)](https://arxiv.org/abs/2610.16338)
 
 **A human-aligned synchronization reward for videos with sound.**
 
@@ -35,8 +35,8 @@ SyncReward measures how well audible events align with visible actions, returnin
 
 ### 🔥 News
 
+- **[2026.10.14]** Our paper, [SyncReward: Human-Aligned Synchronization Reward for Audio-Visual Generation](https://arxiv.org/abs/2610.16338), is now available on arXiv.
 - **[2026.10.10]** Released the SyncReward codebase with two-stage training, scoring, benchmark evaluation, and before/after video demos.
-- **Paper and citation:** coming soon.
 
 ### 📝 Release Status
 
@@ -46,7 +46,7 @@ SyncReward measures how well audible events align with visible actions, returnin
 - [x] [Human annotations, training splits, benchmark, and video archives](https://huggingface.co/datasets/Guan123/SyncReward-Data).
 - [x] Before/after post-training demos with audio.
 - [x] Apache-2.0 code license.
-- [ ] Paper and BibTeX citation.
+- [x] [Paper](https://arxiv.org/abs/2610.16338) and BibTeX citation below.
 
 <a id="overview"></a>
 
@@ -93,7 +93,7 @@ Each pair uses the **same text prompt**, but contains different generations; fra
 The reference environment is **Python 3.12.9, CUDA 12.4, cuDNN 9.1, and FFmpeg 4.4.2**, with NVIDIA H20 GPUs. Dependency versions are pinned in [requirements.txt](requirements.txt). Install FFmpeg with shared libraries available to TorchCodec before decoding videos.
 
 ```bash
-git clone https://github.com/guankaisi/SyncReward.git
+git clone https://github.com/WeChatCV/SyncReward.git
 cd SyncReward
 
 conda create -n syncreward python=3.12 -y
@@ -370,7 +370,19 @@ SyncReward builds on [Meta's Perception Encoder Audio-Visual (PE-AV)](https://hu
 
 ### ✏️ Citation
 
-The paper and BibTeX entry are **coming soon**. In the meantime, please link to this repository when referring to the implementation.
+If you find SyncReward useful in your research, please cite our [paper](https://arxiv.org/abs/2610.16338):
+
+```bibtex
+@misc{guan2026syncrewardhumanalignedsynchronizationreward,
+  title={SyncReward: Human-Aligned Synchronization Reward for Audio-Visual Generation},
+  author={Kaisi Guan and Ying Ba and Wenjing Wang and Xihua Wang and Chen Li and Jing Lyu and Ruihau Song},
+  year={2026},
+  eprint={2610.16338},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.16338},
+}
+```
 
 ### 📄 License
 
